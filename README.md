@@ -328,25 +328,6 @@ Action plan
 Copy message to friend
 ```
 
----
-
-## Hacktoberfest submission checklist
-
-Before publishing the final entry, verify:
-
-- [ ] Project is publicly accessible on GitHub
-- [ ] Repository is the new Notice2Action project
-- [ ] `.env.local` and API keys are not committed
-- [ ] Live deployment works
-- [ ] Gemma is actually used in the core workflow
-- [ ] Demo shows the friend problem clearly
-- [ ] Demo uses a real friend-specific scenario where appropriate
-- [ ] DEV submission post includes the project story, demo, code, build details, and open-innovation explanation
-- [ ] Required challenge tags are included
-- [ ] Final submission links point to the correct live project and GitHub repository
-
----
-
 ## Repository
 
 **GitHub:**
