@@ -550,39 +550,43 @@ export default function Home() {
 
   return (
     <main className="site">
-      <div className="container">
+      {/* =================================================
+          FULL-WIDTH STICKY HEADER
+      ================================================= */}
 
-        {/* =================================================
-            NAVIGATION
-        ================================================= */}
-
-        <nav className="nav">
-          <a
-            className="brand"
-            href="#top"
-            aria-label="Notice2Action home"
-          >
-            <span className="logo">
-              <Sparkles size={17} />
-            </span>
-
-            Notice2Action
-          </a>
-
-          <div className="nav-actions">
-            <span className="pill">
-              Built with Gemma 4
-            </span>
-
-            <button
-              className="ghost"
-              onClick={loadSample}
-              type="button"
+      <header className="nav-shell">
+        <div className="container">
+          <nav className="nav">
+            <a
+              className="brand"
+              href="#top"
+              aria-label="Notice2Action home"
             >
-              Live demo
-            </button>
-          </div>
-        </nav>
+              <span className="logo">
+                <Sparkles size={17} />
+              </span>
+
+              Notice2Action
+            </a>
+
+            <div className="nav-actions">
+              <span className="pill">
+                Built with Gemma 4
+              </span>
+
+              <button
+                className="ghost"
+                onClick={loadSample}
+                type="button"
+              >
+                Live demo
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div className="container">
 
         {/* =================================================
             HERO
@@ -1635,6 +1639,15 @@ export default function Home() {
         textarea:focus,
         select:focus {
           outline: none;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible,
+        select:focus-visible {
+          outline: 2px solid var(--lime);
+          outline-offset: 3px;
         }
       `}</style>
     </main>
